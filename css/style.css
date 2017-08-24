@@ -3,33 +3,61 @@ body {
 }
 
 /* Begin: Card slider stylization*/
-.card {
+.cardSlider {
+    margin-top: 26px;
+}
+
+.cardSlider .cards-container .card {
+    width: 308px;
+    background-color: white;
     border: 1px solid #e2e2e2;
     border-top-color: #2DA936;
     display: inline-block;
     border-radius: 2px;
-
+    margin-left: 26px;
 }
 
-.cardSlider .card {
-    background-color: white;
-}
-
-.cardSlider .card img {
+.cardSlider .cards-container .card .card-image img {
     display: block;
     width: 308px;
     height: 133px;
     border-radius: 2px 2px 0 0;
 }
 
-.cardSlider .card-header .title {
+.cardSlider .cards-container .card-content {
+    margin: 0 19px 19px 19px;
+}
+
+.cardSlider .cards-container .card-content .card-header {
+    height: 76px;
+    display: table;
+}
+
+.cardSlider .cards-container .card .card-content .card-header .card-logo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cardSlider .cards-container .card .card-content .card-header .card-logo img {
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.cardSlider .cards-container .card .card-content .card-header .card-presentation {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.cardSlider .cards-container .card .card-content .card-header .title {
     font-size: 23px;
     color: #3A3A3A;
     font-family: Arial, serif; /* fallback alternative font-family */
     font-weight: bold;
 }
 
-.cardSlider .card-header .description {
+.cardSlider .cards-container .card .card-content .card-header .description {
     text-transform: uppercase;
     font-size: 12px;
     color: #ADADAD;
@@ -37,18 +65,25 @@ body {
     font-weight: bold;
 }
 
-
-.cardSlider .card .card-body {
-    width: 308px;
+.cardSlider .cards-container .card .card-content .card-body {
     font-size: 12px;
     color: #3A3A3A;
     font-family: Arial, serif; /* fallback alternative font-family */
     font-weight: bold;
     line-height: 1.583;
+    margin-bottom: 19px;
 }
 
-.cardSlider .card .card-footer {
+.cardSlider .cards-container .card .card-content .card-footer {
     font-size: 16px;
+    color: #2DA936;
+    font-family: Arial, serif; /* fallback alternative font-family */
+    font-weight: bold;
+}
+
+.cardSlider .cardSlider-footer {
+    text-align: center;
+    font-size: 40px;
     color: #2DA936;
     font-family: Arial, serif; /* fallback alternative font-family */
     font-weight: bold;
