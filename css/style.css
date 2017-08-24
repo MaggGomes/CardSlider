@@ -1,0 +1,57 @@
+body {
+    background-color: #F6F6F6;
+}
+
+/* Begin: Card slider stylization*/
+.card {
+    border: 1px solid #e2e2e2;
+    border-top-color: #2DA936;
+    display: inline-block;
+    border-radius: 2px;
+
+}
+
+.cardSlider .card {
+    background-color: white;
+}
+
+.cardSlider .card img {
+    display: block;
+    width: 308px;
+    height: 133px;
+    border-radius: 2px 2px 0 0;
+}
+
+.cardSlider .card-header .title {
+    font-size: 23px;
+    color: #3A3A3A;
+    font-family: Arial, serif; /* fallback alternative font-family */
+    font-weight: bold;
+}
+
+.cardSlider .card-header .description {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ADADAD;
+    font-family: Arial, serif; /* fallback alternative font-family */
+    font-weight: bold;
+}
+
+
+.cardSlider .card .card-body {
+    width: 308px;
+    font-size: 12px;
+    color: #3A3A3A;
+    font-family: Arial, serif; /* fallback alternative font-family */
+    font-weight: bold;
+    line-height: 1.583;
+}
+
+.cardSlider .card .card-footer {
+    font-size: 16px;
+    color: #2DA936;
+    font-family: Arial, serif; /* fallback alternative font-family */
+    font-weight: bold;
+}
+
+/* End: Card slider stylization */
