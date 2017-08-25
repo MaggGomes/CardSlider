@@ -7,6 +7,10 @@ body {
     margin-top: 26px;
 }
 
+.cardSlider .cards-container {
+    margin-bottom: 26px;
+}
+
 .cardSlider .cards-container .card {
     width: 308px;
     background-color: white;
@@ -72,6 +76,10 @@ body {
     font-weight: bold;
     line-height: 1.583;
     margin-bottom: 19px;
+    height: 57px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
 }
 
 .cardSlider .cards-container .card .card-content .card-footer {
@@ -81,12 +89,36 @@ body {
     font-weight: bold;
 }
 
-.cardSlider .cardSlider-footer {
-    text-align: center;
-    font-size: 40px;
+.cardSlider .cardSlider-footer .cardSlider-arrows-wrapper {
+    margin: 0 auto;
+    width: 40px;
+}
+
+.cardSlider .cardSlider-footer .cardSlider-arrow {
+    font-size: 26px;
     color: #2DA936;
     font-family: Arial, serif; /* fallback alternative font-family */
     font-weight: bold;
+    border: none;
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.cardSlider .cardSlider-footer .cardSlider-arrow:hover {
+    color: #288931;
+}
+
+.cardSlider .cardSlider-footer .cardSlider-arrow:focus {
+    outline:0;
+}
+
+#less {
+    float: left;
+}
+
+#more {
+    float: right;
 }
 
 /* End: Card slider stylization */
