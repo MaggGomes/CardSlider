@@ -16,11 +16,11 @@ For running the aplication simply create a *div* element in the DOM with the cla
 
 **Example**:
 
-In your index.html:
+In index.html:
 
     <div id="sliderExample1" class="cardSlider"></div>  
     
-In your script.js:
+In script.js:
 
     $('#sliderExample1').cardSlider({
         url: "http://localhost:3000/cards/",
