@@ -7,10 +7,6 @@ body {
     margin-top: 26px;
 }
 
-.cardSlider .cards-container {
-    margin-bottom: 26px;
-}
-
 .cardSlider .cards-container .card {
     width: 308px;
     background-color: white;
@@ -19,6 +15,7 @@ body {
     display: inline-block;
     border-radius: 2px;
     margin-left: 26px;
+    margin-bottom: 26px;
 }
 
 .cardSlider .cards-container .card .card-image img {
@@ -91,6 +88,7 @@ body {
 
 .cardSlider .cardSlider-footer .cardSlider-arrows-wrapper {
     margin: 0 auto;
+    height: 35px;
     width: 40px;
 }
 

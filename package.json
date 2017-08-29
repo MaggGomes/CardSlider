@@ -1,0 +1,31 @@
+{
+  "name": "cardslider",
+  "version": "1.0.0",
+  "description": "Card slider component",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js --single-run --browsers PhantomJS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaggGomes/CardSlider.git"
+  },
+  "author": "Manuel Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaggGomes/CardSlider/issues"
+  },
+  "homepage": "https://github.com/MaggGomes/CardSlider#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
+    "karma-jasmine-ajax": "^0.1.13",
+    "karma-jasmine-jquery": "^0.1.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "phantomjs": "^2.1.7"
+  }
+}
