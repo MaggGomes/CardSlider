@@ -2,12 +2,12 @@ $(document).ready(function () {
 
     $('#sliderExample1').cardSlider({
         url: "http://localhost:3000/cards/",
-        numberSlides: 3
+        numberSlides: 2
     });
 
     $('#sliderExample2').cardSlider({
         url: "http://localhost:3000/cards/",
-        numberSlides: 2
+        numberSlides: 1
     });
 });
 
@@ -109,7 +109,7 @@ $.fn.cardSlider = function (options) {
     });
 };
 
-/* Truncate big text with "..." */
+/* Truncates big text with "..." */
 function truncate(string){
     if (string.length > 125)
         return string.substring(0, 125)+'...';

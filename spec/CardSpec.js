@@ -5,11 +5,14 @@ describe("CardSlider tests", function(){
     });
 
     it("Should have at least one CardSlider class element", function(){
+        jasmine.getFixtures().fixturesPath = 'base/spec/javascripts/fixtures';
         loadFixtures("testFixture.html");
+
         expect($('.cardSlider')).toExist();
     });
 
     it("Card slider should have one card", function(){
+        jasmine.getFixtures().fixturesPath = 'base/spec/javascripts/fixtures';
         loadFixtures("testFixture.html");
 
         var $testingSlider = $('#sliderExample1');
