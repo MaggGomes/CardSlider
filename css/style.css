@@ -7,21 +7,24 @@ body {
     margin-top: 26px;
 }
 
+.cardSlider .cards-container {
+    width: 100%;
+}
+
 .cardSlider .cards-container .card {
-    width: 308px;
+    width: 100%;
     background-color: white;
     border: 1px solid #e2e2e2;
     border-top-color: #2DA936;
-    display: inline-block;
+    display: block;
     border-radius: 2px;
-    margin-left: 26px;
     margin-bottom: 26px;
 }
 
 .cardSlider .cards-container .card .card-image img {
     display: block;
-    width: 308px;
-    height: 133px;
+    width: 100%;
+    height: auto;
     border-radius: 2px 2px 0 0;
 }
 
@@ -74,9 +77,6 @@ body {
     line-height: 1.583;
     margin-bottom: 19px;
     height: 57px;
-    overflow: hidden;
-    -webkit-line-clamp: 3;
-    text-overflow: ellipsis;
 }
 
 .cardSlider .cards-container .card .card-content .card-footer {
@@ -117,6 +117,21 @@ body {
 
 #more {
     float: right;
+}
+
+/* Small devices (tablets, 768px and up) @screen-sm-min */
+@media (min-width: 768px){
+
+    .cardSlider .cards-container .card .card-image img {
+        width: 308px;
+        height: 133px;
+    }
+
+    .cardSlider .cards-container .card {
+        width: 308px;
+        display: inline-block;
+        margin-left: 26px;
+    }
 }
 
 /* End: Card slider stylization */

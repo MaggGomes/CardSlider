@@ -37,6 +37,7 @@ $.fn.cardSlider = function (options) {
         '</div>' +
         '</div>');
 
+    /* Reading data from server */
     $.get({
         url: settings.url,
         success: function (data) {
@@ -56,7 +57,11 @@ $.fn.cardSlider = function (options) {
 
             var slides = slider.find('.card').length;
 
-            if (settings.numberSlides > 1) {
+            /* Verifies if the window is in mobile resolution. If resolution smaller than a 768px,
+                only one card will be shown at a time */
+            if ($( window ).width() < 768)
+                settings.numberSlides = 1;
+            else if (settings.numberSlides > 1) {
                 var nextSlide = slider.find('.cards-container').children(':first-child');
 
                 nextSlide.clone().insertAfter(slider.find('.cards-container').children(':last-child'));
