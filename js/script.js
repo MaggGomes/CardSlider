@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('#sliderExample1').cardSlider({
         url: "http://localhost:3000/cards/",
-        numberSlides: 4
+        numberSlides: 3
     });
 
     $('#sliderExample2').cardSlider({
@@ -47,7 +47,7 @@ $.fn.cardSlider = function (options) {
 
                 $newCard.find('.card-image').append('<img src=' + value.image_url + ' alt="Description">');
                 $newCard.find('.title').append(value.title);
-                $newCard.find('.card-body').append(value.text);
+                $newCard.find('.card-body').append(truncate(value.text));
 
                 slider.find('.cards-container').append($newCard);
             });
@@ -107,6 +107,14 @@ $.fn.cardSlider = function (options) {
         },
         async: false
     });
+};
+
+/* Truncate big text with "..." */
+function truncate(string){
+    if (string.length > 125)
+        return string.substring(0, 125)+'...';
+    else
+        return string;
 };
 
 
