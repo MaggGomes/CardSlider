@@ -28,7 +28,7 @@ In script.js:
     });
 
 ### Testing aplication
-For testing the aplication use the following command (don't forget to use dummy data found here: https://git.io/vPNAT):
+For testing the aplication use the following command (don't forget to use *dummy* data found here: https://git.io/vPNAT):
 
     npm test
 
